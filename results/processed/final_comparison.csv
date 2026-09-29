@@ -1,0 +1,6 @@
+Benchmark,Metric,VM,Docker
+CPU,Events/sec,1668.10,1751.35
+Memory,MiB/sec,23629.16,11496.33
+Disk,MiB/sec,449.60,553.20
+Network,Gbits/sec,44.0,40.5
+API,Requests/sec,3130.57,1818.79
