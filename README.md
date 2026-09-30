@@ -146,4 +146,67 @@ Raw API results are stored in:
 
 API scalability was evaluated using ApacheBench with the `/health` endpoint and 1,000 total requests at different concurrency levels.
 
-| Concurrency | VM (requests/sec) | Docker (reque
+| Concurrency | VM (requests/sec) | Docker (requests/sec) |
+| ----------: | ----------------: | --------------------: |
+|           1 |           1332.04 |                638.18 |
+|          10 |           1521.87 |               1443.35 |
+|          50 |           1352.61 |               1758.26 |
+|         100 |           1387.78 |               2006.91 |
+
+The results show that API throughput changes with increasing concurrency. In this experiment, Docker achieved higher throughput at the higher concurrency levels.
+
+Graph:
+
+![API Scalability](results/graphs/api_scalability.png)
+
+Raw scalability results are stored in:
+
+`results/raw/api_scalability/`
+
+## 12. Project Structure
+
+```text
+vm-vs-container-performance/
+├── api/
+│   ├── Dockerfile
+│   ├── main.py
+│   └── requirements.txt
+│
+├── docker/
+│   └── Dockerfile
+│
+├── results/
+│   ├── graphs/
+│   │   ├── api_comparison.png
+│   │   ├── api_scalability.png
+│   │   ├── cpu_comparison.png
+│   │   ├── cpu_scalability.png
+│   │   ├── disk_comparison.png
+│   │   ├── memory_comparison.png
+│   │   └── network_comparison.png
+│   │
+│   ├── processed/
+│   │   └── api_scalability.csv
+│   │
+│   └── raw/
+│       ├── api/
+│       ├── api_scalability/
+│       ├── cpu/
+│       ├── cpu_scalability/
+│       ├── disk/
+│       ├── memory/
+│       └── network/
+│
+├── .gitignore
+└── README.md
+```
+
+## 13. Conclusion
+
+This experiment demonstrates that VM and container performance can differ depending on the workload.
+
+The measured results show different behavior for CPU, memory, disk, network, and API workloads. Containers share the host kernel and generally introduce a different overhead profile compared with a full virtual machine, while the actual performance depends on the workload and configuration.
+
+The scalability tests also show that increasing CPU threads or API concurrency does not necessarily produce a linear increase in performance.
+
+The experiment was performed using the available VM resources, so the results should be interpreted as measurements for this specific environment rather than universal performance values.
