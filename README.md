@@ -53,7 +53,7 @@ The Docker container produced a slightly higher average CPU throughput in this e
 
 Graph:
 
-`results/graphs/cpu_comparison.png`
+![CPU Comparison](results/graphs/cpu_comparison.png)
 
 ## 6. Memory Performance
 
@@ -68,7 +68,7 @@ The VM produced higher memory throughput in this experiment.
 
 Graph:
 
-`results/graphs/memory_comparison.png`
+![Memory Comparison](results/graphs/memory_comparison.png)
 
 ## 7. Disk Performance
 
@@ -83,7 +83,7 @@ One VM disk run produced an unusually low result and lasted significantly longer
 
 Graph:
 
-`results/graphs/disk_comparison.png`
+![Disk Comparison](results/graphs/disk_comparison.png)
 
 ## 8. Network Performance
 
@@ -100,7 +100,7 @@ This is a local VM-interface benchmark and does not represent Internet bandwidth
 
 Graph:
 
-`results/graphs/network_comparison.png`
+![Network Comparison](results/graphs/network_comparison.png)
 
 ## 9. API Performance
 
@@ -120,7 +120,7 @@ The final API comparison value represents the combined result of the two API ben
 
 Graph:
 
-`results/graphs/api_comparison.png`
+![API Comparison](results/graphs/api_comparison.png)
 
 Raw API results are stored in:
 
