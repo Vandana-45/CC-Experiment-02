@@ -13,30 +13,30 @@ Document Path:          /health
 Document Length:        20 bytes
 
 Concurrency Level:      100
-Time taken for tests:   5.879 seconds
+Time taken for tests:   5.510 seconds
 Complete requests:      10000
 Failed requests:        0
 Total transferred:      1450000 bytes
 HTML transferred:       200000 bytes
-Requests per second:    1701.05 [#/sec] (mean)
-Time per request:       58.787 [ms] (mean)
-Time per request:       0.588 [ms] (mean, across all concurrent requests)
-Transfer rate:          240.87 [Kbytes/sec] received
+Requests per second:    1814.90 [#/sec] (mean)
+Time per request:       55.099 [ms] (mean)
+Time per request:       0.551 [ms] (mean, across all concurrent requests)
+Transfer rate:          256.99 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0   10  13.0      2      66
-Processing:     2   49  21.9     45     118
-Waiting:        0   43  22.4     41     115
-Total:          4   58  18.7     58     118
+Connect:        0   10  12.8      2      53
+Processing:     3   44  18.9     43     112
+Waiting:        0   39  18.9     38     107
+Total:          3   55  17.6     54     131
 
 Percentage of the requests served within a certain time (ms)
-  50%     58
-  66%     65
-  75%     69
-  80%     73
-  90%     84
-  95%     93
-  98%    101
-  99%    104
- 100%    118 (longest request)
+  50%     54
+  66%     62
+  75%     66
+  80%     68
+  90%     76
+  95%     84
+  98%     94
+  99%    102
+ 100%    131 (longest request)
